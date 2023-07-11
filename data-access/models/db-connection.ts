@@ -1,6 +1,7 @@
 import { Sequelize, Options,Dialect } from 'sequelize';
 import * as configurationProvider from '@practica/configuration-provider';
 import { logger } from '@practica/logger';
+import * as tedious from 'tedious';
 
 // ️️️✅ Best Practice: Keep a singleton DB connection pool in a process
 let dbConnection: Sequelize;
@@ -17,6 +18,7 @@ export default function getDbConnection() {
   port: 2433,
   timezone: 'Asia/Bangkok',
   dialect: 'mssql' as Dialect,
+  dialectModule: tedious,
   logging:  true
 });
   //   dbConnection = new Sequelize(
