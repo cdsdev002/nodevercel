@@ -2,7 +2,7 @@
   "name": "order-service",
   "version": "0.0.6",
   "description": "An example Node.js app that is packed with best practices",
-  "main": "./.dist/start.js",
+  "main": ".dist/start.js",
   "scripts": {
     "start": "node .dist/start.js",
     "start:dev": "PORT=3000 PRETTY_PRINT=true nodemon start.ts",
@@ -13,6 +13,7 @@
     "db:create": "cd data-access && sequelize-cli ",
     "build": "tsc",
     "build:watch": "tsc --watch",
+    "vercel-build": "echo-hello",
     "installDependencies": "npm install"
   },
   "author": "Practica team",
