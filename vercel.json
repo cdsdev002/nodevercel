@@ -10,7 +10,7 @@
 "routes": [
     {
         "src":"/(.*)",
-        "dest":".dist/entry-points/api/routes.js"
+        "dest":".dist/start.js"
     }
 
 ]
