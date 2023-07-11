@@ -13,7 +13,6 @@
     "db:create": "cd data-access && sequelize-cli ",
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "vercel-build": "echo-hello",
     "installDependencies": "npm install"
   },
   "author": "Practica team",
